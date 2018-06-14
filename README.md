@@ -181,24 +181,24 @@ cursor在Android中是查询数据后得到的一个管理数据集合的类，c
 方法关闭游标释放资源；<br/>
 Cursor的常用方法：
     
-    cursor.moveToFirst();		        //移动到第一行
-    cursor.moveToLast();		        //移动到最后一行
-    cursor.moveToNext();		        //移动到下一行
-    cursor.move(int offset);		    //一当前位置为基准移动到指定位置
-    cursor.moveToPosition(int position);//移动到指定行
-    Cursor.moveToPrevious();		    //移动到前一行
-    Cursor.isFirst();		            //是否是指向第一行
-    Cursor.isLast();		            //是否是指向最后一行
-    Cursor.isBeforeFirst();		        //是否指向第一行之前
-    Cursor.isAfterLast();		        //是否指向最后一行之后
-    Cursor.isNull(int columnIndex);		//指定列是否为空
-    Cursor.isClosed();		            //游标是否关闭
-    Cursor.getCount();		            //获取总数
-    Cursor.getPosition();		        //当前游标的行标
-    Cursor.getColumnIndex(String columnName);		//获取列名对应的索引值
-    Cursor.getString(int columnIndex);	//获取当前行指定列的值
-    Cursor.close();		                //关闭游标，释放资源
-    Cursor.getColumnIndexOrThow(String columnName);		//从零开始返回列名对应的索引值不存在的话抛出IllegalArgumentException异常
+    cursor.moveToFirst();   //移动到第一行
+    cursor.moveToLast();    //移动到最后一行
+    cursor.moveToNext();    //移动到下一行
+    cursor.move(int offset);    //一当前位置为基准移动到指定位置
+    cursor.moveToPosition(int position);    //移动到指定行
+    Cursor.moveToPrevious();    //移动到前一行
+    Cursor.isFirst();   //是否是指向第一行
+    Cursor.isLast();    //是否是指向最后一行
+    Cursor.isBeforeFirst();     //是否指向第一行之前
+    Cursor.isAfterLast();   //是否指向最后一行之后
+    Cursor.isNull(int columnIndex);     //指定列是否为空
+    Cursor.isClosed();  //游标是否关闭
+    Cursor.getCount();  //获取总数
+    Cursor.getPosition();   //当前游标的行标
+    Cursor.getColumnIndex(String columnName);   //获取列名对应的索引值
+    Cursor.getString(int columnIndex);  //获取当前行指定列的值
+    Cursor.close(); //关闭游标，释放资源
+    Cursor.getColumnIndexOrThow(String columnName); //从零开始返回列名对应的索引值不存在的话抛出IllegalArgumentException异常
 
 Cursor的遍历方式：<br/>
     
