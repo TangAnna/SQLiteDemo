@@ -1,2 +1,2 @@
-# SQLiteAndContacts
-SQLite数据库和手机联系人的使用
+# SQLite的使用
+SQLite数据库
