@@ -11,6 +11,7 @@ Android中的数据存储有五种方式：<br />
 5.网络存储<br />
 其中数据库存储的方式经常会用到，这里讲解一下使用方式，主要就是增、删、改、查的操作<br />
 在Android中有一个数据库辅助类SQLiteOpenHelper，使用要创建他的子类并重写其中了两个方法和一个构造方法<br />
+onCreate()方法
     
     /**
          * 数据库第1次创建时 则会调用，即 第1次调用 getWritableDatabase（） / getReadableDatabase（）时调用
