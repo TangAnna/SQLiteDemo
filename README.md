@@ -60,40 +60,42 @@ onUpgrade()方法
 
 总结一下sql语句的使用<br /> 
 1.创建表  <br /> 
-create table 表名(字段名 数据类型 是否是主键 是否自增，字段名 数据类型，.....) <br />  
-create table student (_id integer primary key,name varchar(32),age integer)<br /> 
+    
+     create table 表名(字段名 数据类型 是否是主键 是否自增，字段名 数据类型，.....) 
+     create table student (_id integer primary key,name varchar(32),age integer)
 
 2.删除表
-
-drop table 表名
-drop table student
+    
+    drop table 表名
+    drop table student
 
 3.插入数据
-
-insert into 表名 (字段名，字段名..) values(value1,value2...)
-insert into student (_id,name) values(1,"小明")
-insert into student values(1,"小明",18)//这省略掉前面字段名的方式后面的value值必须与表中的顺序相对应，并且是全部字段值
+    
+    insert into 表名 (字段名，字段名..) values(value1,value2...)
+    insert into student (_id,name) values(1,"小明")
+    insert into student values(1,"小明",18)//这省略掉前面字段名的方式后面的value值必须与表中的顺序相对应，并且是全部字段值
 
 4.修改数据
-
-update 表名 set 字段=新值 where 修改条件
-update student set name="张三" where name="小明"
+    
+    update 表名 set 字段=新值 where 修改条件
+    update student set name="张三" where name="小明"
 
 5.删除数据
-
-delete from 表名 where 删除条件
-delete from student where _id=1
+    
+    delete from 表名 where 删除条件
+    delete from student where _id=1
 
 6.查询数据
-select 字段名(可多个中间用逗号隔开) from 表名 where 查询条件 group by 分组的字段 having 筛选条件 order by 排序字段
-select * from 表名   //表示查询所有数据
-select _id,name from student where age>18
-select * from student
-select * from student where _id<>2  //不等于
-select * from student where _id=2 and age>20
-select * from student where name like "%娜%"   //名字中包含娜的数据
-select * from student where name is null  //姓名是空的数据
-select * from student where age between 18 and 20  //年龄在18到20之间的数据
-select * from student where age >18 order by age    //年龄大于18并且按照年龄排好序
+    
+    select 字段名(可多个中间用逗号隔开) from 表名 where 查询条件 group by 分组的字段 having 筛选条件 order by 排序字段
+    select * from 表名   //表示查询所有数据
+    select _id,name from student where age>18
+    select * from student
+    select * from student where _id<>2  //不等于
+    select * from student where _id=2 and age>20
+    select * from student where name like "%娜%"   //名字中包含娜的数据
+    select * from student where name is null  //姓名是空的数据
+    select * from student where age between 18 and 20  //年龄在18到20之间的数据
+    select * from student where age >18 order by age    //年龄大于18并且按照年龄排好序
 
 
