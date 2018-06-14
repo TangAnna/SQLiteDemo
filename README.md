@@ -1,16 +1,16 @@
 # SQLite的使用
 _SQLite数据库_ 
-数据库的种类有很多，在Android中我们使用SQLite这种嵌入式的数据库
+数据库的种类有很多，在Android中我们使用SQLite这种嵌入式的数据库<br />
 特点：小型的、可嵌入、效率高、开源的、无数据类型、关系型数据库、程序驱动、支持事物操作
 
-Android中的数据存储有五种方式：
-1.SharedPreferences
-2.文件存储
-3.ContentProvider
-4.数据库存储
-5.网络存储
-其中数据库存储的方式经常会用到，这里讲解一下使用方式，主要就是增、删、改、查的操作
-在Android中有一个数据库辅助类SQLiteOpenHelper，使用要创建他的子类并重写其中了两个方法和一个构造方法
+Android中的数据存储有五种方式：<br />
+1.SharedPreferences<br />
+2.文件存储<br />
+3.ContentProvider<br />
+4.数据库存储<br />
+5.网络存储<br />
+其中数据库存储的方式经常会用到，这里讲解一下使用方式，主要就是增、删、改、查的操作<br />
+在Android中有一个数据库辅助类SQLiteOpenHelper，使用要创建他的子类并重写其中了两个方法和一个构造方法<br />
     
     /**
          * 数据库第1次创建时 则会调用，即 第1次调用 getWritableDatabase（） / getReadableDatabase（）时调用
