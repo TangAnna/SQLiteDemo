@@ -54,16 +54,14 @@ onUpgrade()方法
             super(context, name, factory, version);
         }
     
-操作数据库时有两种方式：
-1.直接写sql语句，使用SQLiteDatabase的execSQl(String sql)方法执行（推荐使用）；
-2.SQLiteDatabase给我们封装好了常用的API我们可以直接调用；
+操作数据库时有两种方式：<br /> 
+1.直接写sql语句，使用SQLiteDatabase的execSQl(String sql)方法执行（推荐使用）；<br /> 
+2.SQLiteDatabase给我们封装好了常用的API我们可以直接调用；<br /> 
 
-总结一下sql语句的使用
-1.创建表  
-
-create table 表名(字段名 数据类型 是否是主键 是否自增，字段名 数据类型，.....)  
-
-create table student (_id integer primary key,name varchar(32),age integer)</br>
+总结一下sql语句的使用<br /> 
+1.创建表  <br /> 
+create table 表名(字段名 数据类型 是否是主键 是否自增，字段名 数据类型，.....) <br />  
+create table student (_id integer primary key,name varchar(32),age integer)<br /> 
 
 2.删除表
 
