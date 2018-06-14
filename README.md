@@ -59,10 +59,11 @@ onUpgrade()方法
 2.SQLiteDatabase给我们封装好了常用的API我们可以直接调用；
 
 总结一下sql语句的使用
-1.创建表
+1.创建表  
 
-create table 表名(字段名 数据类型 是否是主键 是否自增，字段名 数据类型，.....)
-create table student (_id integer primary key,name varchar(32),age integer)
+create table 表名(字段名 数据类型 是否是主键 是否自增，字段名 数据类型，.....)  
+
+create table student (_id integer primary key,name varchar(32),age integer)</br>
 
 2.删除表
 
