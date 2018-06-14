@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.tanganan.sqlitedemo.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_sql_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e6e4e4"
+        android:padding="20dp"
+        android:text="数据库使用的讲解"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tv_sql_create"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#b512f5"
+        android:gravity="center"
+        android:text="创建数据库"
+        android:textColor="#fff"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tv_sql_insert"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="#b512f5"
+        android:gravity="center"
+        android:text="插入新数据"
+        android:textColor="#fff"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tv_sql_query"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="#b512f5"
+        android:gravity="center"
+        android:text="查询数据"
+        android:textColor="#fff"
+        android:textSize="18sp"/>
+
+
+    <TextView
+        android:id="@+id/tv_sql_delete"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="#b512f5"
+        android:gravity="center"
+        android:text="删除一条数据"
+        android:textColor="#fff"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tv_sql_update"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="#b512f5"
+        android:gravity="center"
+        android:text="更新数据"
+        android:textColor="#fff"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tv_sql_deleteTable"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="#b512f5"
+        android:gravity="center"
+        android:text="删除整张表"
+        android:textColor="#fff"
+        android:textSize="18sp"/>
+
+</LinearLayout>
