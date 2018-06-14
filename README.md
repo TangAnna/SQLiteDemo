@@ -54,6 +54,12 @@ onUpgrade()方法
             super(context, name, factory, version);
         }
     
+SQLiteOpenHelper中有两个方法是获取SQLiteDatabase对象的，一个是getReadableDatabase()另一个是getWritableDatabase()
+这两个方法从方法名称上看一个是获取可读的数据库，一个是获取可写入的数据库，但其实这两个方法发的真正含义是创建或者打开数据库，这个数据库正常情是可读可写的
+只有在特殊情况下才分只可读|写（磁盘不足时 | 数据库限制了权限）
+    
+    
+    
 操作数据库时有两种方式：<br /> 
 1.直接写sql语句，使用SQLiteDatabase的execSQl(String sql)方法执行（推荐使用）；<br /> 
 2.SQLiteDatabase给我们封装好了常用的API我们可以直接调用；<br /> 
@@ -97,5 +103,7 @@ onUpgrade()方法
     select * from student where name is null  //姓名是空的数据
     select * from student where age between 18 and 20  //年龄在18到20之间的数据
     select * from student where age >18 order by age    //年龄大于18并且按照年龄排好序
+
+
 
 
